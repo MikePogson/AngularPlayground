@@ -1,0 +1,66 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light main-nav">
+    <a class="navbar-brand text-light" [routerLink]="['/']">
+        <img class="d-inline-block align-top" alt="" width="30" height="30" src="assets/PRISM.png">
+        PrismNX
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"
+                [routerLinkActive]="['link-active']"
+                [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link text-light nav-item" [routerLink]="['/']">HOME</a>
+            </li>
+            <li class="nav-item"
+                [routerLinkActive]="['link-active']"
+                [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link text-light nav-item" [routerLink]="['/']">PROJECTS</a>
+            </li>
+            <li class="nav-item"
+                [routerLinkActive]="['link-active']"
+                [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link text-light nav-item" [routerLink]="['/']">CONTRACTS</a>
+            </li>
+            <li class="nav-item"
+                [routerLinkActive]="['link-active']"
+                [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link text-light nav-item" [routerLink]="['/']">REPORTS</a>
+            </li>
+            <li class="nav-item"
+                [routerLinkActive]="['link-active']"
+                [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link text-light nav-item" [routerLink]="['/']">SYSTEM</a>
+            </li>
+           
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Projects..." aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            <li class="nav-item dropdown login-user">
+                <a class="nav-link nav-item dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    {{loggedInUserName}}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item text=light "  [routerLink]="['/relogin']">Login As...</a>
+                </div>
+            </li>
+            <button class="btn export-btn">
+                <i class="fas fa-cloud-download-alt"></i>
+                Export
+            </button>
+            <button class="btn help-btn">
+                <i class="fas fa-comments"></i>
+                Help
+            </button>
+            <button class="btn feedback-btn" >
+                <i class="fas fa-comment-dots"></i>
+                Feedback
+            </button>
+        </ul>
+      </div>
+</nav>

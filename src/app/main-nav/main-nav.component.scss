@@ -1,0 +1,53 @@
+$nav-color: rgba( 0,0,102,1);
+$nav-font: Open Sans;
+
+.main-nav {
+	font-family: $nav-font;
+	background-color: $nav-color !important;
+	border-radius: 0;
+}
+
+.nav-item {
+    width: 150px;
+    line-height: 20px;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-left: 1.5rem;
+}
+
+.feedback-btn {
+    border-radius: 20px;
+    width: 90px;
+    background-color: #ff0080;
+    color: white;
+    font-size: 12px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.help-btn {
+    border-radius: 20px;
+    width: 70px;
+    background-color: #06c6c9;
+    color: white;
+    font-size: 12px;
+    padding: 7px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.export-btn {
+    border-radius: 20px;
+    width: 85px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    font-size: 12px;
+    padding: 7px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.login-user {
+    margin-right: 50px;
+}
